@@ -9,4 +9,11 @@ from . import views
 urlpatterns = [
     # -- Vista pricipal (índice)
     path('', views.index, name='index'),
+    path('Alimentacion.html/', views.Alimentacion, name='Alimentacion'),
+    path('seca.html/', views.seca, name='seca'),
+    path('mojada.html/', views.mojada, name='mojada'),
+    path('producto1.html/', views.producto1, name='producto1'),
+    path('list2/', views.list2, name='list2'),
+    path('formulario1/', views.formulario1, name='formulario1'),
+    path('recepcion1/', views.recepcion1, name='reception1'),
 ]

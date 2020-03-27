@@ -1,11 +1,35 @@
 from django.shortcuts import render
-
+from django.template import Template, Context
+from django.template.loader import get_template
 # Create your views here.
 # -- Fichero mi_tienda/views.py
 from django.http import HttpResponse
+from mi_tienda.models import Producto
 
 # -- Vista principal de mi tienda
 # -- El nombre de la vista puede ser cualquiera. Nosotros lo hemos
 # -- llamado index, pero se podría haber llamado pepito
 def index(request):
-    return HttpResponse("Hola! esta es la página principal de Mi tienda!")
+    return render(request, 'tienda.html')
+def Alimentacion(request):
+    return render(request, 'Alimentacion.html')
+def seca(request):
+    return render(request, 'seca.html')
+def mojada(request):
+    return render(request, 'mojada.html')
+def producto1(request):
+    productos = Producto.objects.all()
+    return render(request, 'producto1.html', {'precio':productos[0].precio,'nombre':productos[0].nombre,'stock':productos[0].stock})
+def list2(request):
+    productos = Producto.objects.all()
+    return render(request, 'list2.html', {'productos':productos})
+def formulario1(request):
+    return render(request, 'formulario1.html', {})
+def recepcion1(request):
+    # -- Obtener el nombre de la persona
+    persona = request.POST['nombre']
+    articulo = request.POST['articulo']
+    direccion = request.POST['direccion']
+    # -- Imprimirlo en la consola del servidor
+    print(f" PEDIDO RECIBIDO!!!  ----> {persona} + {articulo} + {direccion}")
+    return HttpResponse("Datos recibidos!!.    Comprador: " + request.POST['nombre'] + "Articulo: " + request.POST['articulo'] + " Direccion: " + request.POST['direccion'])

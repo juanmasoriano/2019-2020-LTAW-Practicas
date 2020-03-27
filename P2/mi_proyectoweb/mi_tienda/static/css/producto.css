@@ -64,8 +64,15 @@ header{
 #col8{
   margin-left: 10px;
   margin-top: 10px;
-  width: 75%;
+  width: 37%;
   float: left;
+  background-color: rgb(230,195,80)
+}
+#col9{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 38%;
+  float:left;
   background-color: rgb(230,195,80)
 }
 /* Menu horizonatl */
@@ -109,6 +116,32 @@ header{
   padding-left: 15px;
   padding-right: 15px;
 }
+
+#buttoncomprar li{
+  display: flex;
+  float: right;
+  width: 20%;
+  height: 30px;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+#buttoncomprar li a{
+  border-radius: 20px;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: courier;
+  font-size: 21px;
+  color: rgb(230,195,80);
+  background-color: rgb(100,60,0);
+}
+#buttoncomprar li a:hover{
+  border-radius: 20px;
+  margin-top: -2;
+  padding-bottom: 22px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
 /*Menu vertical*/
 #menu ul{
   width: 20%;
@@ -135,6 +168,15 @@ header{
 p{
   margin-left: 30%;
   margin-right: 5%;
+  font-family: courier;
+  font-size: 100%;
+  color: rgb(100,60,0);
+}
+
+p.description{
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 0%;
   font-family: courier;
   font-size: 100%;
   color: rgb(100,60,0);

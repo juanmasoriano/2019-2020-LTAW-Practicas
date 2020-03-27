@@ -1,0 +1,101 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/producto.css'%}">
+    <script type="text/javascript" src="mi-js.js" defer>
+    </script>
+    <title>KittCat</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <aside id="col1">
+          <p class="logo"><strong>KittCat</strong></p>
+        </aside>
+
+        <article id="col2">
+          <div class="box">
+            <input type="search" id="search" placeholder="Search..." />
+          </div>
+
+        </article>
+
+        <article id="col3">
+          <p>Contacto: xxx-xxx-xxx<br>
+          KittCat@gmail.com</p>
+        </article>
+      </section>
+    </header>
+
+    <section>
+      <aside id="col4">
+        <img src="{% static 'images/gato.jpg'%}" width=100% height="215px" id="gato">
+      </aside>
+
+      <aside id="col5">
+        <img src="{% static 'images/gato1.jpg'%}" width=100% height="215px">
+      </aside>
+
+      <aside id="col6">
+        <img src="{% static 'images/gato2.jpg'%}" width=100% height="215px">
+      </aside>
+
+      <aside id="col7">
+        <ul id="button">
+          <li><a href='../Alimentacion.html'>Alimentación</a></li>
+          <li><a href='#'>Higiene</a></li>
+          <li><a href='#'>Juguetes</a></li>
+          <li><a href='#'>Rascadores</a></li>
+          <li><a href='#'>Adopción</a></li>
+        </ul>
+      </aside>
+
+      <aside id="menu">
+        <ul>
+          <li><a href='../seca.html'>Pienso</a></li>
+          <li><a href='../mojada.html'>Comida húmeda</a></li>
+          <li><a href='#'>Snacks y golosinas</a></li>
+          <li><a href='#'>Malta y complementos</a></li>
+          <li><a href='#'>Rascadores</a></li>
+          <li><a href='#'>Camas</a></li>
+          <li><a href='#'>Transporte de gatos</a></li>
+          <li><a href='#'>Comederos y bebederos</a></li>
+          <li><a href='#'>Juguetes</a></li>
+          <li><a href='#'>Areneros</a></li>
+          <li><a href='#'>Higiene y cuidados</a></li>
+          <li><a href='#'>Arena</a></li>
+          <li><a href='#'>Antiparasitarios</a></li>
+        </ul>
+      </aside>
+
+      <aside id="col8">
+        <img src="{% static 'images/comida_seca.jpg'%}" style=padding:2%; width=80% height="60%">
+      </aside>
+      <aside id="col9">
+        <p><strong>{{nombre}} {{precio}} €</strong></p>
+        <br>
+        <p class="description">Brekkies de buey con verduras y cereales</p>
+        <br>
+        <p class="description">Con omega 6, para piel sana y pelo brillante</p>
+        <br>
+        <p class="description">Fomenta un buen mantenimiento muscular</p>
+        <br>
+        <p class="description">Rica en minerales(a,d,e) y en hierro y manganeso</p>
+        <br>
+        <p class="description">Fuente de calcio y fósforo para huesos y dientes fuertes</p>
+        <br>
+        <p class="description"><strong>Quedan {{stock}} unidades</strong></p>
+        <ul id="buttoncomprar">
+          <li><a href='../formulario1'>Comprar</a></li>
+        </ul>
+      </aside>
+
+
+    </section>
+
+
+  </body>
+</html>

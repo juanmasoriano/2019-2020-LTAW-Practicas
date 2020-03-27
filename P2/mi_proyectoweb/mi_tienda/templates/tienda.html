@@ -1,8 +1,10 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="{% static 'css/tienda.css'%}">
     <script type="text/javascript" src="mi-js.js" defer>
     </script>
     <title>KittCat</title>
@@ -30,19 +32,20 @@
 
     <section>
       <aside id="col4">
-        <img src="gato.jpg" width=100% height="215px" id="gato">
+        <img src="{% static 'images/gato.jpg'%}" width=100% height="215px" id="gato">
       </aside>
 
       <aside id="col5">
-        <img src="gato1.jpg" width=100% height="215px">
+        <img src="{% static 'images/gato1.jpg'%}" width=100% height="215px">
       </aside>
 
       <aside id="col6">
-        <img src="gato2.jpg" width=100% height="215px">
+        <img src="{% static 'images/gato2.jpg'%}" width=100% height="215px">
       </aside>
 
       <aside id="col7">
         <ul id="button">
+          <!-- <li><button type="button" id="Alimetacion">Alimentación</button></li> -->
           <li><a href='Alimentacion.html'>Alimentación</a></li>
           <li><a href='#'>Higiene</a></li>
           <li><a href='#'>Juguetes</a></li>
@@ -53,8 +56,8 @@
 
       <aside id="menu">
         <ul>
-          <li><a href='#'>Pienso</a></li>
-          <li><a href='#'>Comida húmeda</a></li>
+          <li><a href='seca.html'>Pienso</a></li>
+          <li><a href='mojada.html'>Comida húmeda</a></li>
           <li><a href='#'>Snacks y golosinas</a></li>
           <li><a href='#'>Malta y complementos</a></li>
           <li><a href='#'>Rascadores</a></li>
@@ -69,7 +72,7 @@
         </ul>
       </aside>
 
-      <aside id="col8">
+    <!--  <aside id="col8">
         <img src="comida_seca.jpg" style=padding:2%; width=20% height="10%">
         <img src="comida_seca_1.jpg" style=padding:2%; width=20% height="10%">
         <img src="comida_seca_2.jpg" style=padding:2%; width=20% height="10%">
@@ -81,6 +84,7 @@
         <img src="comida_mojada_3.jpg" style=padding:2%; width=20% height="10%">
       </aside>
 
+    -->
     </section>
 
 

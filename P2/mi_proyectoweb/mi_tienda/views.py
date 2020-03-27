@@ -20,6 +20,15 @@ def mojada(request):
 def producto1(request):
     productos = Producto.objects.all()
     return render(request, 'producto1.html', {'precio':productos[0].precio,'nombre':productos[0].nombre,'stock':productos[0].stock})
+def producto2(request):
+    productos = Producto.objects.all()
+    return render(request, 'producto2.html', {'precio':productos[1].precio,'nombre':productos[1].nombre,'stock':productos[1].stock})
+def producto3(request):
+    productos = Producto.objects.all()
+    return render(request, 'producto3.html', {'precio':productos[2].precio,'nombre':productos[2].nombre,'stock':productos[2].stock})
+def producto4(request):
+    productos = Producto.objects.all()
+    return render(request, 'producto4.html', {'precio':productos[3].precio,'nombre':productos[3].nombre,'stock':productos[3].stock})
 def list2(request):
     productos = Producto.objects.all()
     return render(request, 'list2.html', {'productos':productos})

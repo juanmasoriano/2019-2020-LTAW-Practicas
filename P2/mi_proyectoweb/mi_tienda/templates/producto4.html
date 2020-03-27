@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/tienda.css'%}">
+    <link rel="stylesheet" href="{% static 'css/producto.css'%}">
     <script type="text/javascript" src="mi-js.js" defer>
     </script>
     <title>KittyCat</title>
@@ -45,7 +45,7 @@
 
       <aside id="col7">
         <ul id="button">
-          <li><a href='#'>Alimentación</a></li>
+          <li><a href='../Alimentacion.html'>Alimentación</a></li>
           <li><a href='#'>Higiene</a></li>
           <li><a href='#'>Juguetes</a></li>
           <li><a href='#'>Rascadores</a></li>
@@ -72,30 +72,25 @@
       </aside>
 
       <aside id="col8">
-        <img src="{% static 'images/comida_seca.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_seca_1.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_seca_2.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_seca_3.jpg'%}" style=padding:2%; width=20% height="10%">
+        <img src="{% static 'images/comida_seca_3.jpg'%}" style=padding:2%; width=80% height="60%">
+      </aside>
+      <aside id="col9">
+        <p><strong>{{nombre}} {{precio}} €</strong></p>
         <br>
-        <ul id="button1">
-          <li><a href='../producto1.html'>Brekkies buey</a></li>
-          <li><a href='../producto2.html'>Brekkies salmon</a></li>
-          <li><a href='../producto3.html'>Ultima pollo</a></li>
-          <li><a href='../producto4.html'>Purina pollo</a></li>
-        </ul>
+        <p class="description">Reducción en un 40% de sarro</p>
         <br>
-        <img src="{% static 'images/comida_mojada.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_mojada_1.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_mojada_2.jpg'%}" style=padding:2%; width=20% height="10%">
-        <img src="{% static 'images/comida_mojada_3.jpg'%}" style=padding:2%; width=20% height="10%">
+        <p class="description">Tracto urinario saludable gracias a minerales equilibrados</p>
         <br>
-        <ul id="button1">
-          <li><a href='../Alimentacion.html'>Gelatina felix</a></li>
-          <li><a href='#'>Whiskas pescado</a></li>
-          <li><a href='#'>Whiskas pollo</a></li>
-          <li><a href='#'>Gelatia Delikuit</a></li>
+        <p class="description">Alta absorción de los nutrientes gracias a ingredientes de alta calidad</p>
+        <br>
+        <p class="description">Sin colorantes añadidos, sin aromatizantes ni conservantes artificiales añadidos</p>
+        <br>
+        <p class="description"><strong>Quedan {{stock}} unidades</strong></p>
+        <ul id="buttoncomprar">
+          <li><a href='../formulario1'>Comprar</a></li>
         </ul>
       </aside>
+
 
     </section>
 

@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(230,195,80);
+}
+h1{
+  margin-left: 39%;
+  margin-top: 15%;
+}
+h2{
+  margin-left: 45%;
+  margin-top: 5%;
+}
+h3{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+h4{
+  margin-left: 13%;
+  margin-top: 4%;
+}
+form{
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-right: 28%;
+  background-color: white;
+  border-radius: 10px;
+}
+label{
+  margin-left: 5%;
+  font-style: italic;
+  font-size: 25px;
+}
+input{
+  border-radius: 10px;
+  border-style: groove;
+  font-style: italic;
+  font-size: 15px;
+}
+.carrito{
+  padding: 1%;
+  float: right;
+  font-family: courier;
+  font-size: 17px;
+  border-radius: 10px;
+  color: rgb(230,195,80);
+  background-color: rgb(100,60,0)
+}

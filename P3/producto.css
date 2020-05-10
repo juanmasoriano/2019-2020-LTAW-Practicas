@@ -1,0 +1,164 @@
+body {
+  padding: 0px;
+}
+/* Cabecera */
+header{
+  height: 150px;
+    background-color: rgb(230,195,80);
+}
+/* Cuadro de busqueda */
+.busqueda{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: courier;
+  font-size: 17px;
+  border-radius: 10px;
+  color: rgb(230,195,80);
+  background-color: rgb(100,60,0)
+}
+/* Cuadro de busqueda */
+#search{
+  width: 100%;
+  height: 100%;
+}
+/* Logo cabecera */
+#col1{
+  height: 150px;
+  width: 40%;
+  float: left;
+}
+/* Busqueda cabecera */
+#col2{
+  height: 150px;
+  width:30%;
+  float: left;
+}
+/* Contacto cabecera */
+#col3{
+  height: 150px;
+  width: 30%;
+  float:left;
+}
+/* Imagen gato 1 */
+#col4{
+  height: 215px;
+  width: 30%;
+  float:left;
+}
+/* Imagen gato 2 */
+#col5{
+  height: 215px;
+  width: 40%;
+  float: left;
+}
+/* Imagen gato 3 */
+#col6{
+  height: 215px;
+  width: 30%;
+  float: left;
+}
+/* Menu horizontal */
+#col7{
+  margin-top: 10px;
+  height: 50px;
+  width: 100%;
+  float: left;
+  background-color: rgb(230,195,80)
+}
+/* Cuerpo */
+#col8{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 37%;
+  float: left;
+  background-color: rgb(230,195,80)
+}
+#col9{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 38%;
+  float:left;
+  background-color: rgb(230,195,80)
+}
+/* Menu horizonatl */
+#button li{
+  display: inline;
+  float: left;
+  width: 20%;
+  height: 30px;
+}
+#button li a{
+  font-family: courier;
+  font-size: 17px;
+  color: rgb(100,60,0);
+  background-color: rgb(230,195,80)
+}
+#button li a:hover{
+  margin-top: -2;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fin menu horizontal */
+
+/*Menu vertical*/
+#menu ul{
+  width: 20%;
+  margin-top: 10px;
+  float: left;
+  background-color: rgb(230,195,80);
+}
+#menu ul li{
+  font-family: courier;
+  font-size: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#menu ul li a{
+  color: rgb(100,60,0);
+}
+#menu ul li a:hover{
+  margin-top: -2;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Fin menu vertical*/
+/* Boton carrito*/
+.carrito{
+  display:inline;
+  float: right;
+  font-family: courier;
+  font-size: 17px;
+  border-radius: 10px;
+  color: rgb(230,195,80);
+  background-color: rgb(100,60,0)
+}
+p{
+  margin-left: 30%;
+  margin-right: 5%;
+  font-family: courier;
+  font-size: 100%;
+  color: rgb(100,60,0);
+}
+
+p.description{
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 0%;
+  font-family: courier;
+  font-size: 100%;
+  color: rgb(100,60,0);
+}
+
+/* Letra del logo*/
+p.logo {
+  font-family: courier;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 300%;
+  color: rgb(100,60,0);
+}

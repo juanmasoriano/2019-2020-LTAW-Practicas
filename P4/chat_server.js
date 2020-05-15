@@ -62,6 +62,40 @@ io.on('connection', function(socket){
     io.emit('msg', msg);
   })
 
+  socket.on('cmd', (msg) =>{
+
+    console.log("cmd: " + socket.id + ': ' + msg);
+
+    switch (msg){
+      case "/help":
+          socket.emit('cmd', "Comandos soportados: /help , /hello , /date , /list");
+        break;
+
+      case "/hello":
+          socket.emit('cmd', "What’s up dude?");
+        break;
+
+      case "/date":
+        var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+
+        var f=new Date();
+
+        socket.emit('cmd',(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()));
+        break;
+
+      case "/list":
+
+        socket.emit('cmd', user_cont);
+        break;
+
+      default:
+
+      socket.emit('cmd', "Comando no soportado, introduzca /help para mas información");
+
+    }
+  })
+
   //-- Usuario desconectado. Imprimir el identificador de su socket
   socket.on('disconnect', function(){
     console.log('--> Usuario Desconectado. Socket id: ' + socket.id);

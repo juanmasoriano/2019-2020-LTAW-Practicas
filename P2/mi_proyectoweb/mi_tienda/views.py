@@ -5,6 +5,7 @@ from django.template.loader import get_template
 # -- Fichero mi_tienda/views.py
 from django.http import HttpResponse
 from mi_tienda.models import Producto
+from mi_tienda.models import Pedido
 
 # -- Vista principal de mi tienda
 # -- El nombre de la vista puede ser cualquiera. Nosotros lo hemos
@@ -41,4 +42,10 @@ def recepcion1(request):
     direccion = request.POST['direccion']
     # -- Imprimirlo en la consola del servidor
     print(f" PEDIDO RECIBIDO!!!  ----> {persona} + {articulo} + {direccion}")
+    p = Pedido(nombre=persona , articulo=articulo)
+    p.save()
     return HttpResponse("Datos recibidos!!.    Comprador: " + request.POST['nombre'] + "Articulo: " + request.POST['articulo'] + " Direccion: " + request.POST['direccion'])
+def pedido(request):
+
+    pedido = Pedido.objects.all()
+    return render(request, 'pedido.html', {'pedido':pedido})

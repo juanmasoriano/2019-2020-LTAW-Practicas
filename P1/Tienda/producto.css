@@ -1,5 +1,5 @@
 body {
-  padding: 20px;
+  padding: 0px;
 }
 /* Cabecera */
 header{
@@ -64,8 +64,15 @@ header{
 #col8{
   margin-left: 10px;
   margin-top: 10px;
-  width: 75%;
+  width: 37%;
   float: left;
+  background-color: rgb(230,195,80)
+}
+#col9{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 38%;
+  float:left;
   background-color: rgb(230,195,80)
 }
 /* Menu horizonatl */
@@ -87,26 +94,9 @@ header{
   padding-left: 15px;
   padding-right: 15px;
 }
+
 /* Fin menu horizontal */
-#button1 li{
-  display: inline;
-  float: left;
-  width: 25%;
-  height: 30px;
-}
-#button1 li a{
-  font-family: courier;
-  font-size: 17px;
-  margin-right: 5%;
-  color: rgb(100,60,0);
-  background-color: rgb(230,195,80)
-}
-#button1 li a:hover{
-  margin-top: -2;
-  padding-bottom: 19px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 /*Menu vertical*/
 #menu ul{
   width: 20%;
@@ -130,9 +120,28 @@ header{
   padding-right: 10px;
 }
 /* Fin menu vertical*/
+/* Boton carrito*/
+.carrito{
+  display:inline;
+  float: right;
+  font-family: courier;
+  font-size: 17px;
+  border-radius: 10px;
+  color: rgb(230,195,80);
+  background-color: rgb(100,60,0)
+}
 p{
   margin-left: 30%;
   margin-right: 5%;
+  font-family: courier;
+  font-size: 100%;
+  color: rgb(100,60,0);
+}
+
+p.description{
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 0%;
   font-family: courier;
   font-size: 100%;
   color: rgb(100,60,0);

@@ -2,7 +2,7 @@
 
 Funcionamiento:
 
-1. Para arrancar el servidor accedemos a la carpeta mi_proyectoweb y ejecutamos python3 manage.py runserver.
+1. Para arrancar el servidor accedemos a la carpeta P2/mi_proyectoweb y ejecutamos python3 manage.py runserver.
 2. Desde el navegador nos conectamos a localhost:8000/mi_tienda/ que cargará la página principal de la tienda.
 3. Para ver el listado de productos: localhost:8000/mi_tienda/list2.
 4. Para ver el listado de pedidos: localhost:8000/mi_tienda/pedido.

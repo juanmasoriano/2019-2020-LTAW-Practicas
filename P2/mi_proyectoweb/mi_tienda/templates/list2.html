@@ -1,11 +1,14 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
   <html lang="es" dir="ltr">
     <head>
       <meta charset="utf-8">
       <title>Listado</title>
+      <link rel="stylesheet" href="{% static 'css/formulario.css'%}">
     </head>
     <body>
-      <h1>Listado de productos</h1>
+      <h2>Listado de productos</h2>
       <ul>
       {% for prod in productos %}
           <li>{{ prod.nombre }}: --> Precio: {{prod.precio}}</a></li>

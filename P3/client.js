@@ -16,7 +16,7 @@ ver.onkeyup = ()=>{
   var busqueda = document.getElementById('ver').value
 
   //-- Configurar la petición
-  m.open("GET","http://127.0.0.1:8080/myquery?param1=" + busqueda, true);
+  m.open("GET","http://localhost:8080/myquery?param1=" + busqueda, true);
 
   //-- Cuando la haya alguna noticia sobre la peticion
   //-- ejecuta este código

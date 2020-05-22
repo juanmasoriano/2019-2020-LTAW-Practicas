@@ -20,7 +20,7 @@ function peticion(req, res) {
 
   let filename = q.pathname
   let final = path.extname(q.pathname)
-  let productos = ["BREKKIES BUEY","BREKKIES PESCADO","ULTIMA POLLO","","PURINA POLLO"];
+  let productos = ["BREKKIES BUEY","BREKKIES PESCADO","ULTIMA POLLO","PURINA POLLO"];
 
   //-- Leer las cookies
   const cookie = req.headers.cookie;
@@ -246,11 +246,8 @@ function peticion(req, res) {
           var datos = data.split('&')
           console.log(datos)
 
-          content += "DATOS USUARIO:" + '<br>' + '<br>';
+          content += "Enhorabuena, " + datos[0].replace("Nombre=", " ") + datos[1].replace("Apellidos=", " ") + '<br>' + '<br>';
 
-          for (var j = 0; j < datos.length; j++){
-            content += "·   " + datos[j].replace("+"," ") + '<br>' + '<br>';
-          }
         var carrito = RCookie(cookie, "carrito")
         if (!carrito){
           pedido = "No hay ningún articulo en la cesta"
@@ -277,19 +274,19 @@ function peticion(req, res) {
             }
           }
           if (nproducto1 > 0){
-            pedido = "BrekkiesJ: " + nproducto1 + " unidades" + '<br>' + pedido
+            pedido = productos[0] + "    x" + nproducto1 + '<br>' + pedido
           }
           if (nproducto2 > 0){
-            pedido = "BrekkiesP: " + nproducto2 + " unidades" + '<br>' + pedido
+            pedido = productos[1] + "    x" + nproducto2 + '<br>' + pedido
           }
           if (nproducto3 > 0){
-            pedido = "Ultima: " + nproducto3 + " unidades" + '<br>' + pedido
+            pedido = productos[2] + "    x" + nproducto3 + '<br>' + pedido
           }
           if (nproducto4 > 0){
-            pedido = "Purina: " + nproducto4 + " unidades" + '<br>' + pedido
+            pedido = productos[3] + "    x" + nproducto4 + '<br>' + pedido
           }
         }
-        content += "<h3> TU PEDIDO:  </h3>" + "<h4>" + pedido + "<h4>" + "<h3> Ha sido registrado con exito </h3>";
+        content += "<h3> Tu pedido:  </h3>" + "<h4>" + pedido + "<h4>" + "<h3> Ha sido registrado con exito y será enviado a " + datos[2].replace("Direccion=", " ") + "</h3>";
         content += `
             </h3>
             <a class="carrito" href="/">Pagina principal</a>
